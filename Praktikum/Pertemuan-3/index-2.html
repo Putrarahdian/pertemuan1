@@ -16,11 +16,11 @@
     </h2>
 
     <label for="uji_input">Uji Coba Input</label><br>
-    <input type="text" id="uji_input"><br>
+    <input type="text" id="uji_input" onkeyup="tiru()"><br>
     <span id="uji_span"></span><br>
     <button onclick="klik()">Tekan</button>
     <button onclick="ulangi()">Ulangi</button><br>
-    <input type="text" id="uji_input" onkeyup="tiru()"><br>
+    
 
     <script>
         function sorot(obj) {
@@ -42,8 +42,8 @@
             document.getElementById('uji_klik').innerHTML = "Klik Dong!";
         }
         function tiru() {
-            valueinput = document.getElementById("uji_input").value;
-            document.getElementById('uji_span').innerHTML = valueinput;
+            valueinput = document.getElementById('uji_input').value;
+            document.getElementById('uji_span').innerHTML = valueInput;
         }
         function klik () {
             valueinput = document.getElementById('uji_input').value;
